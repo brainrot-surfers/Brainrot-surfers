@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brainrot Surfers – Pets</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1a1a2e, #16213e);
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #0f3460;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #e94560;
+      margin: 0;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .rarity-section {
+      margin-bottom: 50px;
+    }
+
+    .rarity-title {
+      font-size: 2em;
+      margin-bottom: 15px;
+      padding-left: 10px;
+      border-left: 8px solid #ccc;
+    }
+
+    .pets-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .pet-card {
+      background: #22253a;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .pet-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .pet-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .pet-description {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Rarity Colors */
+    .uncommon .rarity-title { border-color: #4caf50; color: #81c784; }
+    .rare .rarity-title { border-color: #2196f3; color: #64b5f6; }
+    .epic .rarity-title { border-color: #9c27b0; color: #ba68c8; }
+    .legendary .rarity-title { border-color: #ff9800; color: #ffb74d; }
+    .mythical .rarity-title { border-color: #e91e63; color: #f06292; }
+
+    .badge {
+      display: inline-block;
+      background-color: #555;
+      color: white;
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      margin-bottom: 6px;
+    }
+
+    .badge.uncommon { background: #4caf50; }
+    .badge.rare { background: #2196f3; }
+    .badge.epic { background: #9c27b0; }
+    .badge.legendary { background: #ff9800; }
+    .badge.mythical { background: #e91e63; }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Brainrot Surfers: Pet Collection</h1>
+    <p>Collect brainrot aura to unlock chaos-powered pets!</p>
+  </header>
+
+  <!-- UNCOMMON -->
+  <div class="rarity-section uncommon">
+    <div class="rarity-title">🟢 Uncommon</div>
+    <div class="pets-grid">
+      <div class="pet-card">
+        <div class="badge uncommon">Uncommon</div>
+        <div class="pet-name">Br Br Patapim (Starter)</div>
+        <div class="pet-description">A jittery blob that dances when you move. Everyone starts with this chaotic cutie.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RARE -->
+  <div class="rarity-section rare">
+    <div class="rarity-title">🔵 Rare</div>
+    <div class="pets-grid">
+      <div class="pet-card">
+        <div class="badge rare">Rare</div>
+        <div class="pet-name">Tripi Tropi</div>
+        <div class="pet-description">Tropical bird that chirps strange memes and spins uncontrollably.</div>
+      </div>
+      <div class="pet-card">
+        <div class="badge rare">Rare</div>
+        <div class="pet-name">Chimpanzee Bananine</div>
+        <div class="pet-description">Wears shades and throws invisible bananas. Probably a DJ.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EPIC -->
+  <div class="rarity-section epic">
+    <div class="rarity-title">🟣 Epic</div>
+    <div class="pets-grid">
+      <div class="pet-card">
+        <div class="badge epic">Epic</div>
+        <div class="pet-name">Ballerina Cappuccino</div>
+        <div class="pet-description">Pirouettes in mid-air while sipping espresso. Classy and unhinged.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGENDARY -->
+  <div class="rarity-section legendary">
+    <div class="rarity-title">🔶 Legendary</div>
+    <div class="pets-grid">
+      <div class="pet-card">
+        <div class="badge legendary">Legendary</div>
+        <div class="pet-name">Tralalero Tralala</div>
+        <div class="pet-description">A floating opera ghost that sings as you collect brainrot aura.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MYTHICAL -->
+  <div class="rarity-section mythical">
+    <div class="rarity-title">🔴 Mythical</div>
+    <div class="pets-grid">
+      <div class="pet-card">
+        <div class="badge mythical">Mythical</div>
+        <div class="pet-name">Tung Tung Sahur</div>
+        <div class="pet-description">A cosmic drum spirit that awakens only at 3AM. Mysterious and loud.</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
